@@ -1,0 +1,24 @@
+* supervisord
+** 配置
+#+BEGIN_SRC
+[program:xxxx]
+directory = /path/to/dir
+command = /path/to/app
+autostart = true
+autorestart = true
+startsecs = 2
+user = root
+redirect_stderr = true
+stdout_logfile = /path/to/stdout
+#+END_SRC
+** 问题
+#+BEGIN_QUOTE
+unix:///tmp/supervisor.sock no such file
+#+END_QUOTE
+** 方案
+#+BEGIN_SRC shell
+# tmp 目录下会清除内容导致连接不上
+supervisord
+#+END_SRC
+** 参考
+1. [[http://supervisord.org/][supervisord]]

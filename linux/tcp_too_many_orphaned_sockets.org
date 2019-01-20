@@ -1,0 +1,6 @@
+* TCP: too many orphaned sockets
+** orphaned socket
+
+** 参考
+1. [[https://yq.aliyun.com/articles/91966/][结合案例深入解析 orphan socket 产生与消亡（一）]]
+

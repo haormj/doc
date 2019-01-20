@@ -1,0 +1,13 @@
+[http]
+	sslVerify = false
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	lg = log --oneline --graph --decorate
+[user]
+	name = haormj
+	email = haormj@qq.com
+[core]
+	editor = vi

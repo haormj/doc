@@ -1,0 +1,38 @@
+* use ssh with expect
+** 问题
+1. ssh 在空闲一段时间之后直接不能够使用,这个在[[ssh client keepalive.org]]中已经解决
+2. 登录远程主机每次都需要输入密码
+** 方案
+自己编写脚本放到 ~/usr/local/bin~ 中
+#+BEGIN_SRC shell
+#! /usr/bin/expect
+
+set t [lindex $argv 0]
+
+if {$t == 1} {
+       spawn ssh root@host.com
+       expect "pass"
+       send "password\n"
+       interact
+}
+
+if {$t == 2} {
+       spawn ssh root@host2.com
+       expect "pass"
+       send "password\n"
+       interact
+}
+
+if {$t == 3} {
+       spawn ssh root@host3.com
+       expect {
+           "continue connecting" {
+                send "yes\n"
+           }
+           "password" {
+                send "password\n"
+           }
+       }
+       interact
+}
+#+END_SRC

@@ -1,0 +1,33 @@
+* spacemacs
+** 问题
+1. 代码跳转
+2. spacemacs 终端虽然是 hybird 模式,但是不支持 M-w
+3. git 太有问题了,目前只是使用命令行中的 git,感觉很难用,需要看是否有好的方法
+4. 使用 C-a 直接到每行开始,而不是到代码开头
+5. 对代码模板(片段)的支持
+6. org table 中文不能够对齐的问题
+7. 英文操作系统打开 emacs 不能够使用系统的中文输出法
+8. 项目搜索
+9. golang 不能够自动导入包
+10. org 导出 pdf,配置还是有点麻烦,暂时不配置了
+11. 在选中的内容上粘贴,之前的不会被覆盖
+12. ibuffer 是否需要开启
+13. semantic 是否需要
+14. 语法检查,当写错之后希望能够提示
+15. org-self-insert-command: Invalid function: org-table-with-shrunk-fieldPNG warning: Interlace handling should be turned on when using png_read_image
+16. 不能自动换行
+17. treemacs 目录刷新缓慢
+** 解决
+1. 尝试 tags
+2. 
+3. magit
+4. better-defaults
+5. 使用 ~Chinese~ layer 之后,可以设置等宽字体,英文使用 ~Source Code Pro~ ,中文使用 ~Source Han Sans SC~
+6. 在命令行中通过`LC_CTYPE=zh_CN.UTF-8 emacs &`启动 emacs
+7. 在导出的时候提示没有 pdflatex,配置 org 导出 pdf 还是有点麻烦的,如果需要可以先导出为 html 之后在通过浏览器转化为 pdf
+8. ibuffer 就是将 buffer 展现出来操作,没有直接使用 ~S b .~ 操作方便
+9. 在尝试了之后,如果只是代码跳转相关,只需要将 gtags 使用好即可
+10. syntax-checking 可解决问题
+    
+** 参考
+1. [[https://kkpradeeban.blogspot.com/2014/04/installing-latexpdflatex-on-ubuntu.html][Installing Latex/PdfLatex on Ubuntu]]

@@ -1,0 +1,109 @@
+* 在 for 循环中使用 goroutine
+** 错误使用
+代码
+#+BEGIN_SRC go
+package main
+
+import (
+	"fmt"
+	"sync"
+)
+
+func main() {
+	wg := sync.WaitGroup{}
+	for i := 0; i < 10; i++ {
+		var fn = func() int {
+			return i
+		}
+		fmt.Println(fn())
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			fmt.Println("routine ", fn())
+		}()
+	}
+	wg.Wait()
+}
+
+#+END_SRC
+
+输出
+#+BEGIN_SRC
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+routine  10
+routine  10
+routine  10
+routine  10
+routine  10
+routine  10
+routine  10
+routine  10
+routine  10
+routine  10 
+#+END_SRC
+** 正确使用
+代码
+#+BEGIN_SRC go
+package main
+
+import (
+	"fmt"
+	"sync"
+)
+
+func main() {
+	wg := sync.WaitGroup{}
+	for i := 0; i < 10; i++ {
+		var fn = func(i int) int {
+			return i
+		}
+		fmt.Println(fn(i))
+		wg.Add(1)
+		go func(i int) {
+			defer wg.Done()
+			fmt.Println("routine ", fn(i))
+		}(i)
+	}
+	wg.Wait()
+}
+
+#+END_SRC
+
+输出
+#+BEGIN_SRC
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+routine  9
+routine  5
+routine  6
+routine  7
+routine  8
+routine  3
+routine  1
+routine  0
+routine  2
+routine  4
+#+END_SRC
+** 现象分析
+1. 函数闭包没有问题, 变量 ~i~ 没有被释放
+2. for 循环结束时, 变量 ~i~ 的值为 10
+3. 在 ~错误使用~ 中, 所有 goroutine 都使用同一个 ~i~ 变量, goroutine 的执行时机决定了输出结果
+4. 在 ~正确使用~ 中, 所有 goroutine 使用值传递,无论 goroutine 是否启动, 变量已经被赋值
+

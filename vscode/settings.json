@@ -1,0 +1,68 @@
+// 将设置放入此文件中以覆盖默认设置
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.fontFamily": "Courier New",
+    "editor.fontSize": 18,
+    "editor.formatOnSave": true,
+    "editor.fontWeight": "600",
+    "workbench.iconTheme": "easy-icons",
+    "editor.lineHeight": 25,
+    "http.proxy": "http://192.168.3.7:4444",
+    // 在使用函数的同时，后面添加括号
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    // 禁止vscode 菜单的快捷键
+    "window.enableMenuBarMnemonics": false,
+    "go.formatOnSave": true,
+    "go.gopath": "/path/to/project/go",
+    "go.goroot": "/path/to/develop/go",
+    "files.autoSave": "onFocusChange",
+    "go.autocompleteUnimportedPackages": true,
+    "extensions.ignoreRecommendations": false,
+    "editor.wordWrap": "on",
+    // js 开发配置
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+        "vue": "html"
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+    "eslint.options": {
+        "plugins": [
+            "html"
+        ]
+    },
+    "vetur.format.js.InsertSpaceBeforeFunctionParenthesis": true,
+    "eslint.nodePath": "/path/to/develop/node-v8.9.0-linux-x64/bin/node",
+    "file_peek.activeLanguages": [
+        "typescript",
+        "javascript",
+        "python",
+        "vue"
+    ],
+    "file_peek.searchFileExtensions": [
+        ".js",
+        ".ts",
+        ".html",
+        ".css",
+        ".scss",
+        "vue"
+    ],
+    "window.zoomLevel": 0,
+    "workbench.panel.location": "bottom",
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "go.testFlags": [
+        "-v"
+    ],
+    "go.addTags": {
+        "tags": "json",
+        "options": "json=omitempty",
+        "promptForTags": true,
+        "transform": "snakecase"
+    },
+    "editor.rulers": [
+        100
+    ]
+}

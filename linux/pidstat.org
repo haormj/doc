@@ -1,0 +1,38 @@
+* pidstat
+** 介绍
+分析进程的资源占用
+** 每间隔 1 秒输出进程的 cpu 占用
+*** 命令
+#+BEGIN_SRC
+pidstat -p pid 1
+#+END_SRC
+*** 输出
+- =%usr=
+       Percentage of CPU used by the task while executing at the
+       user level (application), with or without nice  priority.
+       Note  that this field does NOT include time spent running
+       a virtual processor.
+       用户态 CPU 使用率
+
+- =%system=
+       Percentage of CPU used by the task while executing at the
+       system level (kernel).
+       内核态 CPU 使用率
+
+- =%guest=
+       Percentage  of  CPU  spent by the task in virtual machine
+       (running a virtual processor).
+       运行虚拟机 CPU 使用率
+
+- =%wait=
+       Percentage of CPU spent by the task while waiting to run.
+       等待 CPU 使用率
+
+- =%CPU=
+       Total percentage of CPU time used by the task. In an  SMP
+       environment,  the task's CPU usage will be divided by the
+       total number of CPU's if option -I has  been  entered  on
+       the command line.
+       总的 CPU 使用率
+- =CPU=
+       Processor number to which the task is attached.

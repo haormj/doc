@@ -1,0 +1,10 @@
+* no space left on device
+** ubuntu
+#+BEGIN_SRC
+# 临时修改
+echo 40960 > /proc/sys/fs/inotify/max_user_watches
+# 永久修改
+# 在/etc/sysctl.conf 中增加
+# fs.inotify.max_user_watches=40960
+sysctl -p
+#+END_SRC

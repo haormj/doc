@@ -1,0 +1,9 @@
+* supervisorctl
+** 使用
+#+BEGIN_SRC shell
+# 当重新增加服务之后,需要执行 reload,否则会提示 no such process
+supervisorctl reload 
+supervisorctl start xxx
+supervisorctl restart xxx
+supervisorctl stop xxx
+#+END_SRC

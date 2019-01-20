@@ -1,0 +1,91 @@
+* golang RWMutex
+** 读锁嵌套导致死锁
+*** 代码
+#+BEGIN_SRC go
+package main
+
+import (
+	"log"
+	"net/http"
+	_ "net/http/pprof"
+	"sync"
+	"time"
+)
+
+func main() {
+	wg := sync.WaitGroup{}
+
+	h := Hello{}
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		t := time.NewTicker(time.Millisecond)
+		for _ = range t.C {
+			h.Get()
+		}
+	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		t := time.NewTicker(time.Second)
+		for _ = range t.C {
+			h.Set()
+		}
+	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		http.ListenAndServe(":8888", nil)
+	}()
+
+	wg.Wait()
+}
+
+type Hello struct {
+	sync.RWMutex
+}
+
+func (h *Hello) Get() {
+	h.RLock()
+	defer h.RUnlock()
+
+	// time.Sleep(time.Second)
+
+	h.Query()
+	log.Println("Get")
+}
+
+func (h *Hello) Query() {
+	h.RLock()
+	defer h.RUnlock()
+	// time.Sleep(time.Second)
+	log.Println("Query")
+}
+
+func (h *Hello) Set() {
+	h.Lock()
+	defer h.Unlock()
+	// time.Sleep(time.Second)
+	log.Println("Set")
+}
+#+END_SRC
+*** pprof
+#+BEGIN_SRC
+1 @ 0x42ec1c 0x42ed0e 0x43ff94 0x43fbb9 0x473679 0x6e1491 0x6e13e5 0x6e16ab 0x45d521
+#	0x43fbb8	sync.runtime_Semacquire+0x38	/home/haormj/Project/go/src/runtime/sema.go:56
+#	0x473678	sync.(*RWMutex).RLock+0x48	/home/haormj/Project/go/src/sync/rwmutex.go:50
+#	0x6e1490	main.(*Hello).Query+0x30	/home/haormj/project/go/src/haormj.com/test/main.go:57
+#	0x6e13e4	main.(*Hello).Get+0x64		/home/haormj/project/go/src/haormj.com/test/main.go:52
+#	0x6e16aa	main.main.func1+0xaa		/home/haormj/project/go/src/haormj.com/test/main.go:20
+
+1 @ 0x42ec1c 0x42ed0e 0x43ff94 0x43fbb9 0x47379e 0x6e1561 0x6e17ab 0x45d521
+#	0x43fbb8	sync.runtime_Semacquire+0x38	/home/haormj/Project/go/src/runtime/sema.go:56
+#	0x47379d	sync.(*RWMutex).Lock+0x6d	/home/haormj/Project/go/src/sync/rwmutex.go:98
+#	0x6e1560	main.(*Hello).Set+0x30		/home/haormj/project/go/src/haormj.com/test/main.go:64
+#	0x6e17aa	main.main.func2+0xaa		/home/haormj/project/go/src/haormj.com/test/main.go:29
+#+END_SRC
+** 参考
+1. [[http://zablog.me/2017/09/27/go_sync/][剖析 Go 的读写锁]]
+2. [[https://segmentfault.com/a/1190000017515119][一次读锁重入导致的死锁故障]]

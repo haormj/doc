@@ -1,0 +1,14 @@
+* top
+** 介绍
+查看 linux 当前进程，还有 cpu、内存的使用
+** cpu
+1. us, user    : time running un-niced user processes, 代表用户态 CPU 时间。注意，它不包括下面的 nice 时间，但包括了 guest 时间。
+2. sy, system  : time running kernel processes, 代表内核态 CPU 时间。
+3. ni, nice    : time running niced user processes, 代表低优先级用户态 CPU 时间，也就是进程的 nice 值被调整为 1-19 之间时的 CPU 时间。这里注意，nice 可取值范围是 -20 到 19，数值越大，优先级反而越低。
+4. id, idle    : time spent in the kernel idle handler, 代表空闲时间。注意，它不包括等待 I/O 的时间（iowait）。
+5. wa, IO-wait : time waiting for I/O completion, 代表等待 I/O 的 CPU 时间。
+6. hi : time spent servicing hardware interrupts, 代表处理硬中断的 CPU 时间。
+7. si : time spent servicing software interrupts, 代表处理软中断的 CPU 时间。
+8. st : time stolen from this vm by the hypervisor, 代表当系统运行在虚拟机中的时候，被其他虚拟机占用的 CPU 时间。
+9. guest（通常缩写为 guest），代表通过虚拟化运行其他操作系统的时间，也就是运行虚拟机的 CPU 时间。
+10. guest_nice（通常缩写为 gnice），代表以低优先级运行虚拟机的时间。

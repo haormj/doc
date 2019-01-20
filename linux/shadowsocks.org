@@ -1,0 +1,31 @@
+* shadowsocks
+** 服务器 centos
+1. [[https://github.com/shadowsocks/shadowsocks-go/releases][下载]]对应的二进制
+2. ~/etc/systemd/system/shadowsocks.service~
+#+BEGIN_SRC
+[Unit]
+Description=Shadowsocks Service
+After=storage.service
+After=network.target
+
+[Service]
+LimitNOFILE=40960
+LimitNPROC=40960
+Type=simple
+WorkingDirectory=/opt/shadowsocks
+ExecStart=/opt/shadowsocks/shadowsocks-server
+
+Restart=on-failure
+RestartSec=2s
+
+[Install]
+WantedBy=multi-user.target
+#+END_SRC
+
+3. 启动服务
+#+BEGIN_SRC shell
+systemctl enable shadowsocks
+systemctl start shadowsocks
+#+END_SRC
+** 参考
+1. [[https://github.com/shadowsocks/shadowsocks-go][shadowsocks-go]]

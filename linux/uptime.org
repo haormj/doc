@@ -1,0 +1,18 @@
+* uptime
+** 介绍
+查看当前时间，系统运行时长，有几个用户登录，还有平均负载
+** 平均负载
+#+BEGIN_SRC shell
+haormj@pc:~$ uptime
+21:28:42 up  1:02,  1 user,  load average: 0.54, 0.52, 0.39
+#+END_SRC
+在输出指标中,个人会重视启动时间和系统平均负载,启动时间可以看出机器是否最近有发生重启,负载可以看出当前机器负载是否正常.
+一般的当系统负载超过 cpu 个数的 70%时,说明当前系统负载较高.
+#+BEGIN_QUOTE
+System load averages is the average number of processes that are either in a runnable or uninterruptable state.  A process  in  a  runnable
+state is either using the CPU or waiting to use the CPU.  A process in uninterruptable state is waiting for some I/O access, eg waiting for
+disk.  The averages are taken over the three time intervals.  Load averages are not normalized for the number of CPUs in  a  system,  so  a
+load average of 1 means a single CPU system is loaded all the time while on a 4 CPU system it means it was idle 75% of the time.
+#+END_QUOTE
+系统平均负载是可运行和不可中断在进程在特定时间段内的平均数;可运行状态是指正在使用 CPU 或者等待使用 CPU 的进程;不可中断是指等待 IO 访问的进程;
+之所以说负载高和 CPU 的使用率没有绝对关系就是因为 IO 有时候对 CPU 的需求少,但是还是会造成负载高的现象.

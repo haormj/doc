@@ -1,0 +1,31 @@
+* ipsec
+
+** server
+before
+#+BEGIN_SRC shell
+sudo modprobe af_key
+#+END_SRC
+
+docker.sh
+#+BEGIN_SRC shell
+docker run \
+    --name ipsec-vpn-server \
+    --env-file ./vpn.env \
+    --restart=always \
+    -p 500:500/udp \
+    -p 4500:4500/udp \
+    -v /lib/modules:/lib/modules:ro \
+    -d --privileged \
+    hwdsl2/ipsec-vpn-server
+#+END_SRC
+
+vpn.env 
+#+BEGIN_SRC
+VPN_IPSEC_PSK=xxx
+VPN_USER=xxx
+VPN_PASSWORD=xxx
+#+END_SRC
+
+** 参考
+1. [[https://github.com/hwdsl2/docker-ipsec-vpn-server][ipsec server]]
+2. [[https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Kernel_Administration_Guide/sec-Persistent_Module_Loading.html][load af_key on boot]]

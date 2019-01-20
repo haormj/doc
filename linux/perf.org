@@ -1,0 +1,31 @@
+* perf
+** 介绍
+linux 性能分析工具
+** perf top 实时展示系统分析信息
+*** 命令
+#+BEGIN_SRC shell
+# 展示所有
+perf top
+# 展示具体进程
+perf top -p pid
+# 展示调用关系图
+perf top -g
+#+END_SRC
+*** 输出
+- Overhead: 是该符号的性能事件在所有采样中的比例，用百分比来表示。
+- Shared: 是该函数或指令所在的动态共享对象（Dynamic Shared Object），如内核、进程名、动态链接库名、内核模块名等。
+- Object: 是动态共享对象的类型。比如 [.] 表示用户空间的可执行程序、或者动态链接库，而 [k] 则表示内核空间。
+- Symbol: 是符号名，也就是函数名。当函数名未知时，用十六进制的地址来表示。
+** perf record 将分析数据保存到文件
+*** 命令
+#+BEGIN_SRC shell
+# 开始保存分析文件，按 Ctrl C 停止
+perf record
+# 增加保存调用关系图
+perf record -g
+#+END_SRC
+** perf report 读取展示 =perf record= 保存文件 
+*** 命令
+#+BEGIN_SRC shell
+perf record
+#+END_SRC

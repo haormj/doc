@@ -1,0 +1,6 @@
+* fonts
+** ubuntu
+1. 下载字体
+2. 将字体拷贝到 ~/usr/share/fonts~ 或其子目录下
+3. ~fc-cache -f -v~ 安装字体
+4. ~fc-list~ 查看字体列表
