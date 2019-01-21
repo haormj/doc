@@ -1,0 +1,4 @@
+* ipv6
+** 参考
+1. [[https://zh.wikipedia.org/wiki/IPv6][IPv6]]
+
