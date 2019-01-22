@@ -1,5 +1,4 @@
 * iptables
-
 ** 简介
 
 网络报通过 iptables 的流程:
@@ -69,15 +68,12 @@ iptables -A INPUT -i eth0 -p tcp -j DROP
 iptables -A INPUT -i eth0 -p udp -m limit --limit 20/s --limit-burst 25 -j ACCEPT
 iptables -A INPUT -i eth0 -p udp -j DROP
 #+END_SRC
-
-具体关于 limit 的内容可以通过`man iptables-extensions`
-
+** limit
+具体关于 limit 的内容可以通过 =man iptables-extensions=
 limit 使用令牌桶算法,可以指定桶容量和生成令牌的数量
-
 ** target
 DROP: 直接丢弃这个包,终止匹配当前链,开始匹配下个链
 REJECT: 丢弃并给对方返回错误包,终止匹配当前链,开始匹配下个链
 ** 参考
-[Iptables](https://wiki.archlinux.org/index.php/Iptables_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
-
-[iptables](http://wangchujiang.com/linux-command/c/iptables.html)
+1. [[https://wiki.archlinux.org/index.php/Iptables_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87][Iptables]]
+2. [[http://wangchujiang.com/linux-command/c/iptables.html][iptables]]
