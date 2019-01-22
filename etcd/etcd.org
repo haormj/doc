@@ -1,0 +1,12 @@
+* etcd
+** 每次访问 etcd 都会重定向到外网
+=--advertise-client-urls= 外界访问当前的 url 都是通过这个参数配置的,只有出现在这个参数上的值才会被外界访问,和实际 listen 的不完全对等
+** v2.3.4 etcdctl unexpected status code 401
+这个可以打开 debug,基本上是没有权限的
+** root 用户, root/guest 角色
+- root 用户,在启动安全模式的时是必须的创建的,而且会被授予 root 角色
+- root 角色有所有权限
+- guest 没有提供认证信息的请求有那些权限
+** 参考
+1. [[https://doczhcn.gitbook.io/etcd/index/index-1/clustering][搭建 etcd 集群]]
+2. [[https://coreos.com/etcd/docs/latest/v2/authentication.html][Authentication Guide]]
