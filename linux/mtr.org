@@ -1,0 +1,9 @@
+* mtr
+** 介绍
+mtr 是网络诊断工具,结合了 =ping= 和 =traceroute=
+** 诊断当前网络
+#+BEGIN_SRC shell
+mtr -r google.com
+#+END_SRC
+** 参考
+1. [[https://www.cnblogs.com/xzkzzz/p/7413177.html][如何用 MTR 诊断网络问题]]
