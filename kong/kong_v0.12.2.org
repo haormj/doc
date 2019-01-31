@@ -1,0 +1,7 @@
+* kong v0.12.2
+** 健康检查 
+其中有两种类型的健康检查
+1. 需要定期请求上游服务器，按照指定的错误码或者其他错误来判断上游服务器是否可用
+2. 直接从上游返回的内容中 http 状态码，或者是其他错误，如果错误到达阈值，则直接将上游服务器剔除，也称之为熔断器
+** 参考
+1. [[https://docs.konghq.com/0.12.x/health-checks-circuit-breakers/][Health Checks and Circuit Breakers Reference]]
