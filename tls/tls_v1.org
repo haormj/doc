@@ -1,0 +1,64 @@
+* TLS/SSL
+** 基本知识
+不使用 ssl/tls 连接的 http 通信就是不加密的通信。所有信息通过明文传播，带来了很多风险
+1. 窃听风险 通过网络抓包工具可以轻松获取信息
+2. 篡改风险 第三方可以将网络包的内容进行修改
+3. 冒充风险 第三方可以冒充其他身份与其他人通信
+
+如何使用 ssl/tls 协议就能够解决上述问题
+1. 通信双方发送的内容都是经过加密其他人不能够理解信息内容
+2. 加入校验机制，当内容被篡改之后，通信双方就会发现
+3. 配备了身份证书，防止了身份的冒充
+
+ssl 和 tls 版本的对应关系
+
+运行的流程，客户端从 server 获取公钥，客户端使用公钥加密发送的内容，之后发送给服务器端，服务器收到之后使用自己的私钥对内容进行解密
+
+公钥加密法？Public-key cryptography
+
+1. 公钥被篡改
+将公钥放到数字证书中
+数字证书是什么？Public key certificate
+
+2. 公钥加密内容耗时过长
+每一次对话中，客户端和服务器都生成 session key（对话密钥）服务器的公钥只是对 session key 进行加密，这样就可以介绍加密耗时过长
+
+ssl/tls 通信流程
+1. 客户端从 server 获取公钥
+2. 双方协商生成 session key
+3. 双方采用 session key 进行加密通信
+
+** 创建根证书
+1. key
+#+BEGIN_SRC bash
+openssl genrsa -out private/cakey.pem 2048
+#+END_SRC
+2. cert
+#+BEGIN_SRC bash
+openssl req -new -x509 -key private/cakey.pem -out cacert.pem
+#+END_SRC
+** 颁发证书
+1. key
+#+BEGIN_SRC shell
+openssl genrsa -out app.key 2048
+#+END_SRC
+2. csr
+#+BEGIN_SRC shell
+openssl req -new -key app/app.key -out app.csr -config config -extensions v3_req
+#+END_SRC
+其中 config 就是复制~openssl.cnf~的配置文件,不过需要开启 v3_req,主要是要增加~subjectAltName~
+
+3. crt
+#+BEGIN_SRC shell
+openssl x509 -req -in app.csr -CA cacert.pem -CAkey private/cakey.pem -CAcreateserial -out app.crt -extensions v3_req -extfile config
+#+END_SRC
+** 使用证书
+1. 浏览器导入根证书
+2. 在为证书添加~SAN~的时候,也就是说明了为该证书绑定了域名,之后只要通过证书中的~SAN~访问就可以了
+** 参考资料
+1. [[http://seanlook.com/2015/01/07/tls-ssl/][ssl/tls 原理详解]]
+2. [[http://seanlook.com/2015/01/15/openssl-certificate-encryption/][OpenSSL 与 SSL 数字证书概念贴]]
+3. [[http://seanlook.com/2015/01/18/openssl-self-sign-ca/][基于 OpenSSL 自建 CA 和颁发 SSL 证书]]
+4. [[https://mritd.me/2016/07/03/Harbor-%E4%BC%81%E4%B8%9A%E7%BA%A7-Docker-Registry-HTTPS%E9%85%8D%E7%BD%AE/#二配置-harbor-https][生成的证书中添加 SAN]]
+
+
