@@ -4,8 +4,13 @@
 在计算机网络中，通配符证书是一个可以被多个子域使用的公钥证书。
 *** 限制
 仅支持匹配一级子域名
+** 证书认证等级
+1. DV SSL 证书是 Domain Validation 的缩写，中文名称域名型证书，意思就是对网站域名所有权进行验证。CA 认证机构会向域名持有者的邮箱发送相应的邮件，以确认证书和域名的所有权关系。其特点是简单快捷，价格便 宜，缺点是无法保证网站经营者的身份，因此一般仅用来提供数据加密的功能，属于 Class 1 验证的证书。
+2. OV SSL 证书是 Organization Validation 的缩写，中文名称企业型证书，这种证书在颁发的时候会对网站所有单位的身份和域名的所有权进行证实行验证，所以一般电子商务类的网站往往会做 OV 的认证。价格当然也会比较昂 贵，证书颁发周期也会比较久，属于 Class 2 或者 Class 3 验证的证书。
+3. EV SSL 证书是 Extended Validation 的缩写，企业增强型证书，也是最严格的身份验证，此证书审核证书申请人对域名的所有权，以及详细的企业/组织相关信息审核，当用户在访问通过 EV SSL 认证的网站时候，浏览器的显示为绿色，当然价格也是相当的昂贵，属于 Class 4 验证的证书。
 
 ** 参考
 1. [[https://zh.wikipedia.org/wiki/%E9%80%9A%E9%85%8D%E7%AC%A6%E8%AF%81%E4%B9%A6][通配符证书]]
 2. [[https://tools.ietf.org/html/rfc6125#section-7.2][Wildcard Certificates]]
 3. [[https://zh.wikipedia.org/wiki/%E5%82%B3%E8%BC%B8%E5%B1%A4%E5%AE%89%E5%85%A8%E6%80%A7%E5%8D%94%E5%AE%9A][传输层安全性协议]]
+4. [[https://www.chinassl.net/ssl_industry_news/n465.html][SSL 和 TLS 简介]]
