@@ -64,3 +64,8 @@ ulimit -n
 while true; do netstat -apnt | awk '{print $6}' | sort | uniq -c; sleep 1; done
 ```
 
+计算字符串长度
+
+```shell
+echo "e2241ca1xf7caeea21111e1151211369f67f5b" | wc -L
+```
