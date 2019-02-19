@@ -1,0 +1,9 @@
+* DNS
+** 通配符域名
+   
+** 参考 
+1. [[https://zh.wikipedia.org/wiki/%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F][域名系统]]
+2. [[https://zh.wikipedia.org/wiki/%E6%A0%B9%E7%B6%B2%E5%9F%9F%E5%90%8D%E7%A8%B1%E4%BC%BA%E6%9C%8D%E5%99%A8][根域名服务器]]
+3. [[https://en.wikipedia.org/wiki/Wildcard_DNS_record][Wildcard DNS record]]
+4. [[https://en.wikipedia.org/wiki/Domain_Name_System][Domain Name System]]
+5. [[https://www.rfc-editor.org/rfc/rfc4592.txt][The Role of Wildcards in the Domain Name System]]
