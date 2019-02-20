@@ -69,3 +69,9 @@ while true; do netstat -apnt | awk '{print $6}' | sort | uniq -c; sleep 1; done
 ```shell
 echo "e2241ca1xf7caeea21111e1151211369f67f5b" | wc -L
 ```
+
+快速打开文件管理器
+
+```shell
+nautilus /path
+```
