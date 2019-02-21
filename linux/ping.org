@@ -1,0 +1,18 @@
+* ping
+** 测试 MTU
+#+BEGIN_SRC shell
+ping -s 1400 -M do baidu.com
+#+END_SRC
+整个 IP 包的大小 = IP 头 + ICMP 头 + ICMP 数据
+其中 =-s= 指定的是 ICMP 数据包的大小
+ICMP 头固定为 8 个字节
+IP 头为 20 个字节
+#+BEGIN_QUOTE
+ -M pmtudisc_opt
+              Select  Path MTU Discovery strategy.  pmtudisc_option may be either do (prohibit fragmentation, even local one), want (do PMTU discovery, fragment locally when packet size
+              is large), or dont (do not set DF flag).
+其中可取值为 do/want/dont
+do: 禁止分段
+want: 动态发现 MTU,如果本地包过大可以分包
+dont: 不设置禁止分段标识
+#+END_QUOTE
