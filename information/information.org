@@ -1,0 +1,13 @@
+* 信息
+** 渠道
+| 分类                     | 渠道                                            | 描述                                                            |
+|--------------------------+-------------------------------------------------+-----------------------------------------------------------------|
+| 国家企业信用信息公示系统 | http://www.gsxt.gov.cn/corp-query-homepage.html | 可以查询企业公开信息                                            |
+| 维基百科                 | https://zh.wikipedia.org                        | 中文,基本知识库                                                 |
+| wikipedia                | https://en.wikipedia.org                        | 英文,基本知识库,科技信息有条件推荐看英文,中文有时候没有英文全面 |
+| Google                   | https://www.google.com/                         | 搜索引擎,推荐                                                   |
+| Baidu                    | https://www.baidu.com/                          | 搜索引擎,国内信息可以                                           |
+| 百度百科                 | https://baike.baidu.com/                        | 国内知识库,百度产品                                             |
+| 国家数据                 | http://data.stats.gov.cn                        | 国家各种统计数据                                                |
+
+
