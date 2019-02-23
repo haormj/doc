@@ -1,0 +1,18 @@
+* nginx
+** 源码安装
+** 配置
+通过 proxy protocol 转发
+#+BEGIN_SRC
+stream {
+    server {
+        listen 12345;
+        proxy_pass example.com:12345;
+        proxy_protocol on;
+    }
+    server {
+        listen 12345 udp;
+        proxy_pass example.com:12345;
+        proxy_protocol on;
+    }
+}
+#+END_SRC
