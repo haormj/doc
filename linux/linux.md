@@ -75,3 +75,9 @@ echo "e2241ca1xf7caeea21111e1151211369f67f5b" | wc -L
 ```shell
 nautilus /path
 ```
+
+创建软链接
+
+```shell
+ln -s target link_name
+```
