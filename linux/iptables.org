@@ -59,8 +59,8 @@ iptables -A INPUT -i eth0 -p tcp -j DROP
 
 *** 限制 TCP 建立连接的速率
 #+BEGIN_SRC shell
-iptables -A INPUT -i eth0 -p tcp --syn -m limit --limit 20/s --limit-burst 25 -j ACCEPT
-iptables -A INPUT -i eth0 -p tcp -j DROP
+iptables -A INPUT -i eth0 -p tcp -dport 80 --syn -m limit --limit 20/s --limit-burst 25 -j ACCEPT
+iptables -A INPUT -i eth0 -p tcp -dport 80 -j DROP
 #+END_SRC
 
 ** 限制 UDP 建立连接的速率
