@@ -6,6 +6,7 @@
 3. 错误[[https://unix.stackexchange.com/questions/420295/cant-connect-to-vpn-with-network-manager][处理]]
 #+BEGIN_QUOTE
 问题: Invalid VPN service type (cannot find authentication binary)
+
 解决思路: choose 'store password for all users' in password field
 #+END_QUOTE
 
