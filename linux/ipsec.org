@@ -1,4 +1,14 @@
 * ipsec
+** client
+*** ubuntu 18.04
+1. 安装包 =apt install -y network-manager-l2tp-gnome=
+2. 配置[[https://github.com/hwdsl2/setup-ipsec-vpn/blob/master/docs/clients.md#ubuntu-linux][文档]]
+3. 错误[[https://unix.stackexchange.com/questions/420295/cant-connect-to-vpn-with-network-manager][处理]]
+#+BEGIN_QUOTE
+问题: Invalid VPN service type (cannot find authentication binary)
+
+解决思路: choose 'store password for all users' in password field
+#+END_QUOTE
 
 ** server
 before
@@ -29,3 +39,4 @@ VPN_PASSWORD=xxx
 ** 参考
 1. [[https://github.com/hwdsl2/docker-ipsec-vpn-server][ipsec server]]
 2. [[https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Kernel_Administration_Guide/sec-Persistent_Module_Loading.html][load af_key on boot]]
+3. [[https://github.com/hwdsl2/setup-ipsec-vpn/blob/master/docs/clients.md][Configure IPsec/L2TP VPN Clients]]
