@@ -9,7 +9,16 @@
 
 解决思路: choose 'store password for all users' in password field
 #+END_QUOTE
-
+*** ubuntu 16.04
+1. 安装包
+#+BEGIN_SRC shell
+sudo add-apt-repository ppa:nm-l2tp/network-manager-l2tp
+sudo apt-get update
+sudo apt-get install network-manager-l2tp-gnome
+sudo service xl2tpd stop
+sudo update-rc.d xl2tpd disable
+#+END_SRC
+2. 配置[[https://github.com/hwdsl2/setup-ipsec-vpn/blob/master/docs/clients.md#ubuntu-linux][文档]]
 ** server
 before
 #+BEGIN_SRC shell
