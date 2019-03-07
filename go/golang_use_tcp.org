@@ -1,0 +1,7 @@
+* golang 使用 TCP
+** Read
+
+** 分包
+
+** 参考
+1. [[https://zhuanlan.zhihu.com/p/21369473][Go 语言小贴士 3 － bufio 包]]
