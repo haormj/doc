@@ -1,7 +1,24 @@
 * golang 使用 TCP
 ** Read
-
+读取到的内容最大为传入的大小,但是可以比传入的小,因为 epoll 都是异步通知,从而当 fd 可读的时候,就会通知让 goroutine 去读取,而这时候接收到的 TCP 包比传入的要小,对于 linux 读取文件而言会直接返回,而不是等待读取到指定大小才返回,这也是不否和预期的
 ** 分包
 
 ** 参考
+** 阻塞/非阻塞
+*** 阻塞
+在没有做完上一件事之前,不做其他事
+*** 非阻塞
+在没有做完上一件事之前,做其他事情
+** 同步/异步
+*** 同步
+自己等待结果,自己需要关心
+*** 异步
+别人通知你,你可以不关心,反正有人有告诉你
+** 参考
 1. [[https://zhuanlan.zhihu.com/p/21369473][Go 语言小贴士 3 － bufio 包]]
+2. [[http://hushi55.github.io/2017/04/10/Golang-Syscall][Golang 源码分析 - syscall]]
+3. [[https://tonybai.com/2015/11/17/tcp-programming-in-golang/][Go 语言 TCP Socket 编程]]
+4. [[https://studygolang.com/articles/9843][Go 语言 TCP 网络编程(详细)]]
+5. =man read=
+6. [[https://www.jianshu.com/p/dfd940e7fca2][聊聊 IO 多路复用之 select、poll、epoll 详解]]
+7. [[https://www.geeksforgeeks.org/input-output-system-calls-c-create-open-close-read-write/][Input-output system calls in C | Create, Open, Close, Read, Write]]
