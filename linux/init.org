@@ -1,0 +1,7 @@
+* init
+** System V init
+刚开始 =init= 解决方案,在 =/etc/rc.d= 下面放置脚本,可以通过 =service= 使用这些脚本 
+** Upstart init
+Ubuntu 的 =init= 解决方案, =/etc/init.d= 中有配置文件, 通过 =initctl= 使用
+** systemd
+现在都是使用 =systemd= 作为 =init= 解决方案 
