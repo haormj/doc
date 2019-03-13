@@ -2,7 +2,13 @@
 ** Read
 读取到的内容最大为传入的大小,但是可以比传入的小,因为 epoll 都是异步通知,从而当 fd 可读的时候,就会通知让 goroutine 去读取,而这时候接收到的 TCP 包比传入的要小,对于 linux 读取文件而言会直接返回,而不是等待读取到指定大小才返回,这也是不否和预期的
 ** 分包
-
+** Timeout
+*** SetDeadline
+和同时调用 SetReadDeadline SetWriteDeadline 是等效的
+*** SetReadDeadline
+设置读超时
+*** SetWriteDeadline
+设置写超时
 ** 参考
 ** 阻塞/非阻塞
 *** 阻塞
@@ -22,3 +28,4 @@
 5. =man read=
 6. [[https://www.jianshu.com/p/dfd940e7fca2][聊聊 IO 多路复用之 select、poll、epoll 详解]]
 7. [[https://www.geeksforgeeks.org/input-output-system-calls-c-create-open-close-read-write/][Input-output system calls in C | Create, Open, Close, Read, Write]]
+8. [[https://golang.org/pkg/net/#Conn][Conn]]
