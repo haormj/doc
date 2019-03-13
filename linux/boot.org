@@ -1,0 +1,12 @@
+* boot
+** 清理boot分区
+*** ubuntu18.04
+#+BEGIN_SRC shell
+dpkg --get-selections|grep linux-image
+uname -a
+sudo apt-get purge  内核名称
+
+# 直接运行以下脚本就可以了
+dpkg --get-selections| grep linux-image | grep deinstall | awk '{print $1}' | xargs apt-get purge -y
+#+END_SRC
+    
