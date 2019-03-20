@@ -9,7 +9,7 @@ redis-cli -h host -p port config set appendonly yes
 临时关闭aof
 
 ```shell
-redis-cli -h host -p port config set appendonly yes
+redis-cli -h host -p port config set appendonly no
 ```
 
 导入aof文件
