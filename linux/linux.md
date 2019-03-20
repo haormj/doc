@@ -40,6 +40,19 @@ cp --parents src dst
 ldd /bin/bash
 ```
 
+查看当前动态链接库信息
+
+```shell
+ldconfig -p
+```
+
+手动配置动态链接库
+```shell
+# 在/etc/ld.so.conf.d目录中创建对应文件,然后运行
+# 重建缓存
+ldconfig
+```
+
 查看dns信息
 
 ```shell
