@@ -78,7 +78,7 @@ REJECT: 丢弃并给对方返回错误包,终止匹配当前链,开始匹配下�
 ** 目标地址转换
 #+BEGIN_SRC shell
 iptables -t nat -A PREROUTING -d 1.1.1.1 -j DNAT --to-destination 8.8.8.8
-#+END+SRC
+#+END_SRC
 
 ** 参考
 1. [[https://wiki.archlinux.org/index.php/Iptables_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87][Iptables]]
