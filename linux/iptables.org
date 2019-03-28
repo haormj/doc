@@ -77,7 +77,10 @@ REJECT: 丢弃并给对方返回错误包,终止匹配当前链,开始匹配下�
 
 ** 目标地址转换
 #+BEGIN_SRC shell
+# 网络设备
 iptables -t nat -A PREROUTING -d 1.1.1.1 -j DNAT --to-destination 8.8.8.8
+# 主机设备
+iptables -t nat -A OUTPUT -d 1.1.1.1 -j DNAT --to-destination 8.8.8.8
 #+END_SRC
 
 ** 参考
