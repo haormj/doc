@@ -1,0 +1,5 @@
+* 分布式事务
+** 概述
+分布式事务(Distributed Transaction)
+** 参考
+1. [[https://juejin.im/post/5aa3c7736fb9a028bb189bca][常用的分布式事务解决方案]]

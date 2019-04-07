@@ -14,6 +14,8 @@ tcpdump -i any port 443 -w temp.cap -C 1 -Z root
 
 ```shell
 nohup tcpdump -i any port 443 -w temp.cap -C 1 -Z root &
+# 结束抓包最好发 SIGINT 信号
+kill -2 pid
 ```
 
 查看cap文件
