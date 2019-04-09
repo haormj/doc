@@ -1,3 +1,3 @@
 # doc
 
-![](https://github.com/haormj/doc/blob/master/drawing.svg)
+![](https://raw.githubusercontent.com/haormj/doc/master/drawing.svg)
