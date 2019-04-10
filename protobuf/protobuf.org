@@ -1,0 +1,30 @@
+* protobuf
+** 概述
+一种序列化方式,主要是对内容压缩比高,传输量小
+** 使用
+*** 安装编译器
+在[[https://github.com/protocolbuffers/protobuf][protobuf]] release 中下载对应平台二进制,然后在本地配置环境变量即可
+*** golang
+**** 官方
+安装 golang 插件
+#+BEGIN_SRC shell
+go get -u github.com/golang/protobuf/protoc-gen-go
+#+END_SRC
+通过 proto 生成 golang 代码
+#+BEGIN_SRC shell
+protoc --go_out=. hello.proto
+#+END_SRC shell
+**** gogo
+安装插件
+#+BEGIN_SRC shell
+go get github.com/gogo/protobuf/protoc-gen-gofast
+#+END_SRC
+生成代码
+#+BEGIN_SRC shell
+protoc --gofast_out=. hello.proto
+#+END_SRC
+特性
+- 序列化和反序列化速度变快
+** 参考
+1. [[https://developers.google.com/protocol-buffers/][Protocol Buffers]]
+2. [[https://github.com/gogo/protobuf][gogo/protobuf]]
