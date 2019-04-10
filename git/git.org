@@ -39,4 +39,4 @@ master的所有提交点都没有发生变化,develop中的提交信息没变,�
 
 ** 参考
 1. [[https://segmentfault.com/a/1190000005937408][Git Rebase原理以及黄金准则详解]]
-
+2. [[http://www.ruanyifeng.com/blog/2018/10/git-internals.html][Git 原理入门]]
