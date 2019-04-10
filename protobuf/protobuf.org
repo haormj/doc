@@ -14,7 +14,6 @@ go get -u github.com/golang/protobuf/protoc-gen-go
 #+BEGIN_SRC shell
 protoc --go_out=. hello.proto
 #+END_SRC shell
-
 **** gogo
 安装插件
 #+BEGIN_SRC shell
@@ -24,6 +23,8 @@ go get github.com/gogo/protobuf/protoc-gen-gofast
 #+BEGIN_SRC shell
 protoc --gofast_out=. hello.proto
 #+END_SRC
-
+特性
+- 序列化和反序列化速度变快
 ** 参考
 1. [[https://developers.google.com/protocol-buffers/][Protocol Buffers]]
+2. [[https://github.com/gogo/protobuf][gogo/protobuf]]
