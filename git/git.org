@@ -1,0 +1,50 @@
+* git
+** add
+1. 给定内容生成object对象,返回对应hash值,相同内容hash相同,当然也只会存储一份
+2. 对比文件的hash和之前是否有变化,如果有变化记录到index,其实index存储的就是tree对象
+** commit
+1. 通过index生成tree object
+2. 生成commit object
+3. 修改ref中对应的commit值
+
+** rebase
+*** 场景描述
+1. master提交1,2
+2. 基于master创建develop并提交3,4,5
+3. 切回master,提交6,7
+4. 切回develop,rebase master
+*** 结论
+master
+#+BEGIN_SRC
+* c308ab7 (HEAD -> master) 7
+* e2e0ada 6
+* b6f4a2e 2
+* b62d88e 1
+#+END_SRC
+develop
+#+BEGIN_SRC
+* fc75ef5 (HEAD -> develop) 5
+* 3c2cda7 4
+* 116812a 3
+* b6f4a2e 2
+* b62d88e 1
+#+END_SRC
+rebase
+#+BEGIN_SRC
+* 7d08fb2 (HEAD -> develop) 5
+* 75b2f08 4
+* c0bc653 3
+* c308ab7 (master) 7
+* e2e0ada 6
+* b6f4a2e 2
+* b62d88e 1
+#+END_SRC
+master的所有提交点都没有发生变化,develop中的提交信息没变,但是提交点的hash值变了,其实也就说明提交重新生成了,3'的生成有几个重要的信息: 
+1. 变化内容 
+2. 此提交点的前一个提交点
+
+
+
+** 参考
+1. [[https://segmentfault.com/a/1190000005937408][Git Rebase原理以及黄金准则详解]]
+2. [[http://www.ruanyifeng.com/blog/2018/10/git-internals.html][Git 原理入门]]
