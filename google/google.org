@@ -1,0 +1,4 @@
+* google
+** 日历
+*** 农历生日提醒
+官方并不支持重复农历提醒,不过可以使用[[github.com/maut/genlunarbirthday][genlunarbirthday]]生成 csv 导入到 google 日历中.
