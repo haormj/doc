@@ -1,4 +1,12 @@
 * git
+** add
+1. 给定内容生成object对象,返回对应hash值,相同内容hash相同,当然也只会存储一份
+2. 对比文件的hash和之前是否有变化,如果有变化记录到index,其实index存储的就是tree对象
+** commit
+1. 通过index生成tree object
+2. 生成commit object
+3. 修改ref中对应的commit值
+
 ** rebase
 *** 场景描述
 1. master提交1,2
