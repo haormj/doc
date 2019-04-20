@@ -17,6 +17,8 @@
 15. org-self-insert-command: Invalid function: org-table-with-shrunk-fieldPNG warning: Interlace handling should be turned on when using png_read_image
 16. 不能自动换行
 17. treemacs 目录刷新缓慢
+18. 使用终端 emacs 不共享系统剪切板
+19. 提示代码换行
 ** 解决
 1. 尝试 tags
 2. 
@@ -29,7 +31,7 @@
 9. 在尝试了之后,如果只是代码跳转相关,只需要将 gtags 使用好即可
 10. syntax-checking 可解决问题
 11. ~emacs --daemon~ 启动服务器, 通过 ~emacsclient -t~ 打开, 终端体验比图形的好
-   
- 
+18. 安装 ~xclipboard layer~, 可以通过 ~SPC x p~ / ~SPC x y~
+19. 使用 ~fill-column~ 
 ** 参考
 1. [[https://kkpradeeban.blogspot.com/2014/04/installing-latexpdflatex-on-ubuntu.html][Installing Latex/PdfLatex on Ubuntu]]
