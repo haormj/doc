@@ -28,6 +28,8 @@
 8. ibuffer 就是将 buffer 展现出来操作,没有直接使用 ~S b .~ 操作方便
 9. 在尝试了之后,如果只是代码跳转相关,只需要将 gtags 使用好即可
 10. syntax-checking 可解决问题
-    
+11. ~emacs --daemon~ 启动服务器, 通过 ~emacsclient -t~ 打开, 终端体验比图形的好
+   
+ 
 ** 参考
 1. [[https://kkpradeeban.blogspot.com/2014/04/installing-latexpdflatex-on-ubuntu.html][Installing Latex/PdfLatex on Ubuntu]]
