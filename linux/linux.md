@@ -98,7 +98,8 @@ ln -s target link_name
 搜狗拼音不能使用
 
 ```shell
-pidof fcitx |xargs kill pidof sogou-qimpanel| xargs kill fcitx & sogou-qimpanel & 
+# https://www.findhao.net/res/786
+fcitx -r
 ```
 
 
