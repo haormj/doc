@@ -1,8 +1,0 @@
-* rsyslogd
-** 和 syslogd 的关系
-** 为什么会有时会占用高的 cpu
-#+BEGIN_SRC
-imjournal: begin to drop messages due to rate-limiting
-#+END_SRC
-
-
