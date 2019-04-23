@@ -20,6 +20,7 @@
 18. 使用终端 emacs 不共享系统剪切板
 19. 提示代码换行
 20. 在 emacs 中是否可以直接打开 ~gnome-terminal~ 顺便带上当前路径
+21. 日程,现在个人是通过 gitlab issue board,然后在其中绘制 gantt 来完成,想结合 org-agenda/org-todo 等内容
 ** 解决
 1. 尝试 tags
 2. 
@@ -34,5 +35,8 @@
 11. ~emacs --daemon~ 启动服务器, 通过 ~emacsclient -t~ 打开, 终端体验比图形的好
 18. 安装 ~xclipboard layer~, 可以通过 ~SPC x p~ / ~SPC x y~
 19. 使用 ~fill-column~ 
+** 日程 
+按照我个人的分析,日程的目的就是为了让我们知道,今天应该做那些事情,而抽象以下这个事情的共同特征就可以发现, 日程内容/状态/开始时间/结束时间
+
 ** 参考
 1. [[https://kkpradeeban.blogspot.com/2014/04/installing-latexpdflatex-on-ubuntu.html][Installing Latex/PdfLatex on Ubuntu]]
