@@ -83,6 +83,10 @@ iptables -t nat -A PREROUTING -d 1.1.1.1 -j DNAT --to-destination 8.8.8.8
 iptables -t nat -A OUTPUT -d 1.1.1.1 -j DNAT --to-destination 8.8.8.8
 #+END_SRC
 
+** 将包打印到日志中 
+   #+begin_src shell
+iptables -A INPUT -p tcp -m tcp --sport 443 -j LOG  --log-prefix "<this-is-test-prefix>" --log-ip-options --log-level info
+   #+end_src
 ** 参考
 1. [[https://wiki.archlinux.org/index.php/Iptables_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87][Iptables]]
 2. [[http://wangchujiang.com/linux-command/c/iptables.html][iptables]]

@@ -1,0 +1,49 @@
+* 安全
+** 概述
+著名的密码学者罗纳德·李维斯特解释道：“密码学是关于如何在敌人存在的环境中通信”
+** 对称加密
+用同一个秘钥加密
+** 非对称加密
+公钥公开,私钥保密
+*** 生成私钥
+#+begin_src shell 
+openssl genrsa -out ./pri_key 2048
+#+end_src 
+*** 生成公钥
+#+begin_src shell
+openssl rsa -in ./pri_key -pubout -out ./pub_key
+#+end_src 
+*** 公钥加密,私钥解密
+#+begin_src shell
+openssl rsautl -encrypt -inkey ./pub_key -pubin -in ./plain_text -out ./cipher_text
+openssl rsautl -decrypt -inkey ./pri_key -in ./cipher_text -out ./text
+#+end_src
+*** 私钥签名,公钥验签(私钥加密,公钥解密)
+#+begin_src shell
+openssl rsautl -sign -inkey ./pri_key -in plain_text -out sign_text
+openssl rsautl -verify -inkey ./pub_key -pubin -in sign_text -out text
+#+end_src
+*** 公钥可信
+Alice 发送消息给 Bob,如果 Alice 保存的 Bob 的公钥被攻击者替换为自己的,那么攻击者就可以伪造 Bob,从而作为 Alice 一定要有能力验证这个公钥是 Bob 的能力,
+现在基本的解决方案就是数字证书,证书是由大家都相信的机构签发,证书中包含了 Bob 的信息和公钥,Alice 拿到之后,首先需要可以通过 CA 的公钥验证证书的中的数字签名,通过之后验证 Bob 的简单信息和公钥,这个时候拿到的公钥就是可信的,因为得到了 CA 的证明.
+*** python 公私钥解密示例
+#+begin_src python
+import rsa
+
+pub_key, pri_key = rsa.newkeys(1024)
+
+message = "hello world".encode("utf8")
+cipher_text = rsa.encrypt(message, pub_key)
+plain_text = rsa.decrypt(cipher_text, pri_key)
+
+print(cipher_text)
+print(plain_text)
+#+end_src 
+
+** 数字签名
+主要是为了验证身份,我签的名,是不能够被别人伪造的.这个在你给别人发送消息的时候很有用,如何证明这个内容是你发送的,而不是别人修改过的,现在的数字签名都可以基于非对称加密实现,通过私钥签名,公钥验证.其实签名是需要基于内容的,就好比你是在文件上签字,代表你认可这个文件上的内容一样,但是对于非对称加密对于加密的长度是有要求的,从而引入哈希算法,只需要对哈希的结果签名即可
+** 参考
+1. [[https://zh.wikipedia.org/wiki/%E5%AF%86%E7%A0%81%E5%AD%A6][密码学]] 
+2. [[http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html][数字签名是什么？]]
+3. [[http://www.youdzone.com/signature.html][What is a Digital Signature?]] 
+

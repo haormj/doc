@@ -1,0 +1,21 @@
+* rsyslog
+** 概述
+用于日志处理  
+** 对比
+1. 1980 syslog
+2. 1998 syslog-ng
+3. 2004 rsyslog 
+** 配置
+   #+begin_src
+# 日志来源 操作符 日志等级 动作
+# kern     .=     info     -/var/log/iptables 
+kern.=info -/var/log/iptables
+   #+end_src
+** 为什么会有时会占用高的 cpu
+#+BEGIN_SRC
+imjournal: begin to drop messages due to rate-limiting
+#+END_SRC
+** 参考
+1. [[https://serverfault.com/questions/692309/what-is-the-difference-between-syslog-rsyslog-and-syslog-ng][What is the difference between syslog, rsyslog and syslog-ng?]]
+2. [[https://www.jianshu.com/p/e129ed893362][日志管理 Rsyslog]]
+

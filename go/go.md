@@ -49,3 +49,5 @@ go tool pprof http://xx.xx.xx.xx:xx/debug/pprof/heap?debug=1
 # 进入之后操作同上
 ```
 
+golang pprof 1.11 之后可以方便看 flame
+
