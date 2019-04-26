@@ -21,6 +21,7 @@
 19. 提示代码换行
 20. 在 emacs 中是否可以直接打开 ~gnome-terminal~ 顺便带上当前路径
 21. 日程,现在个人是通过 gitlab issue board,然后在其中绘制 gantt 来完成,想结合 org-agenda/org-todo 等内容
+22. 自动保存文件,切换窗口的时候保存文件
 ** 解决
 1. 尝试 tags
 2. 
