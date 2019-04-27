@@ -1,5 +1,3 @@
 * org mode
-** html 样式
-1. https://github.com/fniessen/org-html-themes
- 
- 
+1. html 导出样式 https://github.com/fniessen/org-html-themes
+2. 导出 markdown，spacemacs 集成了 github flavored markdown,唯一美中不足的是，导出的时候其实我不需要前面的内容
