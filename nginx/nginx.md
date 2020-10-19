@@ -117,5 +117,16 @@ stream {
 }
 ```
 
+#### http跳转到https
+
+```
+server {
+    listen 80;
+    server_name localhost;
+    rewrite ^(.*)$ https://$host$1 permanent;
+}
+
+```
+
 
 
