@@ -128,5 +128,19 @@ server {
 
 ```
 
+#### 动态域名解析
+
+```
+server {
+    listen 8080;
+    location / {
+        resolver 8.8.8.8 valid=10s ipv6=off;
+        resolver_timeout 5s;
+        set $backend www.haormj.xyz;
+        proxy_pass http://$backend;
+    }
+}
+```
+
 
 
