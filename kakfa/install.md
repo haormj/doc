@@ -28,6 +28,7 @@ LimitNOFILE=40960
 LimitNPROC=40960
 User=root
 Group=root
+Environment=JAVA_HOME=/path/to/jdk
 Environment=JRE_HOME=/path/to/jre
 WorkingDirectory=/path/to/kafka
 ExecStart=/path/to/kafka/bin/kafka-server-start.sh config/server.properties
