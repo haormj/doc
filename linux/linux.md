@@ -102,4 +102,9 @@ ln -s target link_name
 fcitx -r
 ```
 
+ubuntu上制作window启动盘
+https://my.oschina.net/u/2306127/blog/1796090
+```
+
+```
 
