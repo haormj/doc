@@ -9,3 +9,6 @@
 - xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
     - 升级macbook之后可能会遇到上述问题，执行下面命令即可
     - xcode-select --install
+- 还是需要解决这个window和mac按键的问题，还有就是编辑器方面的
+    - 首先mac的触摸板肯定是好的，感觉比其他笔记本好
+    - 也不是它的按键不好，主要是习惯了window，去习惯例外一个就比较麻烦
