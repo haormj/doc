@@ -2,6 +2,7 @@
 
 ### karabiner element
 
+- 这个配置文件生成有依赖 https://github.com/haormj/code-generator
 - 个人还是习惯双control，双alt，双win/command，所以将cherry xaga 右ctrl左边键修改为right command按键
 - 本文档 karabiner element下面存放了一些自定义的快捷键
     - 使用的时候，将这些json文件直接复制到 ~/.config/karabiner/assets/complex_modifications 下，然后 karabiner 界面中点击complex modifications中enable对应的功能即可
