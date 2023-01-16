@@ -1,5 +1,17 @@
 ## mac 个人使用记录
 
+### karabiner element
+
+- 个人还是习惯双control，双alt，双win/command，所以将cherry xaga 右ctrl左边键修改为right command按键
+- 本文档 karabiner element下面存放了一些自定义的快捷键
+    - 使用的时候，将这些json文件直接复制到 ~/.config/karabiner/assets/complex_modifications 下，然后 karabiner 界面中点击complex modifications中enable对应的功能即可
+    - win/command + j/k 来将桌面进行左右切换
+    - ctrl + alt + t 打开终端
+    - ctrl + d 关闭终端
+    - alt + tab 切换不同应用
+- karabiner在修改按键的时是支持限制为特定的application，也就是可以通过condition来限制
+    - 为了方便查看 bundle_identifiers ，可以通过 karabiner eventViewer来进行
+
 ### 常见问题
 
 - mac中的command control和之前用的ctrl和alt的区别，以及如何能够继续使用之前的一套按键
