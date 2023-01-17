@@ -26,7 +26,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -54,7 +55,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -82,7 +84,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -110,7 +113,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -138,7 +142,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -166,7 +171,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -194,7 +200,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -222,7 +229,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -250,7 +258,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -278,7 +287,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -306,7 +316,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -334,7 +345,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -362,7 +374,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -390,7 +403,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -418,7 +432,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -446,7 +461,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -474,7 +490,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -502,7 +519,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -530,7 +548,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -558,7 +577,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -586,7 +606,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -614,7 +635,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -642,7 +664,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -670,7 +693,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -698,7 +722,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
@@ -726,7 +751,8 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome"
+                                "^com\\.google\\.Chrome$",
+                                "^com\\.tencent\\.xinWeChat$"
                             ]
                         }
                     ],
