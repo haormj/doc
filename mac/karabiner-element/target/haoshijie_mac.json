@@ -24,10 +24,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -53,10 +55,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -82,10 +86,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -111,10 +117,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -140,10 +148,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -169,10 +179,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -198,10 +210,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -227,10 +241,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -256,10 +272,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -285,10 +303,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -314,10 +334,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -343,10 +365,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -372,10 +396,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -401,10 +427,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -430,10 +458,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -459,10 +489,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -488,10 +520,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -517,10 +551,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -546,10 +582,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -575,10 +613,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -604,10 +644,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -633,10 +675,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -662,10 +706,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -691,10 +737,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -720,10 +768,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -749,10 +799,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -823,7 +875,7 @@
             ]
         },
         {
-            "description": "Open a terminal window with RCtrl-RAlt-T",
+            "description": "terminal",
             "manipulators": [
                 {
                     "from": {
@@ -844,12 +896,374 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "close terminal window with ctrl + d",
-            "manipulators": [
+                },
+                {
+                    "from": {
+                        "key_code": "c",
+                        "modifiers": {
+                            "mandatory": [
+                                "control",
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "c",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "v",
+                        "modifiers": {
+                            "mandatory": [
+                                "control",
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "v",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "t",
+                        "modifiers": {
+                            "mandatory": [
+                                "control",
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "t",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                 {
+                    "from": {
+                        "key_code": "0",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "0",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                 {
+                    "from": {
+                        "key_code": "1",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "1",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                 {
+                    "from": {
+                        "key_code": "2",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "2",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                 {
+                    "from": {
+                        "key_code": "3",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "3",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                 {
+                    "from": {
+                        "key_code": "4",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "4",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                 {
+                    "from": {
+                        "key_code": "5",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "5",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                 {
+                    "from": {
+                        "key_code": "6",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "6",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                 {
+                    "from": {
+                        "key_code": "7",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "7",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                 {
+                    "from": {
+                        "key_code": "8",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "8",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                 {
+                    "from": {
+                        "key_code": "9",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "9",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
                 {
                     "from": {
                         "key_code": "d",
@@ -878,7 +1292,7 @@
                     ],
                     "type": "basic"
                 }
-            ]
+           ]
         }
     ]
 }

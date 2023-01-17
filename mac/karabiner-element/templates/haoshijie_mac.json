@@ -25,10 +25,12 @@
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
-                                "^com\\.google\\.Chrome$",
-                                "^com\\.tencent\\.xinWeChat$"
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$"
                             ]
                         }
                     ],
@@ -100,7 +102,7 @@
             ]
         },
         {
-            "description": "Open a terminal window with RCtrl-RAlt-T",
+            "description": "terminal",
             "manipulators": [
                 {
                     "from": {
@@ -121,12 +123,124 @@
                         }
                     ],
                     "type": "basic"
-                }
-            ]
-        },
-        {
-            "description": "close terminal window with ctrl + d",
-            "manipulators": [
+                },
+                {
+                    "from": {
+                        "key_code": "c",
+                        "modifiers": {
+                            "mandatory": [
+                                "control",
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "c",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "v",
+                        "modifiers": {
+                            "mandatory": [
+                                "control",
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "v",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "t",
+                        "modifiers": {
+                            "mandatory": [
+                                "control",
+                                "shift"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "t",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {{- range $value := splitList "" $.number}}
+                 {
+                    "from": {
+                        "key_code": "{{$value}}",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "{{$value}}",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.Terminal$"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {{- end}}
                 {
                     "from": {
                         "key_code": "d",
@@ -155,7 +269,7 @@
                     ],
                     "type": "basic"
                 }
-            ]
+           ]
         }
     ]
 }
