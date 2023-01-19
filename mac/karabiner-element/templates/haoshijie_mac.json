@@ -40,7 +40,7 @@
                 {{- end}}
                 {
                     "from": {
-                        "key_code": "1",
+                        "key_code": "return_or_enter",
                         "modifiers": {
                             "mandatory": [
                                 "control"
@@ -52,14 +52,19 @@
                     },
                     "to": [
                         {
-                            "key_code": "1",
+                            "key_code": "return_or_enter",
                             "modifiers": "command"
                         }
                     ],
                     "conditions": [
                         {
-                            "type": "frontmost_application_if",
+                            "type": "frontmost_application_unless",
                             "bundle_identifiers": [
+                                "^com\\.baidu\\.icoding$",
+                                "^org\\.gnu\\.Emacs$",
+                                "^com\\.microsoft\\.VSCode$",
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
