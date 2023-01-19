@@ -29,7 +29,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -60,7 +61,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -91,7 +93,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -122,7 +125,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -153,7 +157,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -184,7 +189,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -215,7 +221,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -246,7 +253,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -277,7 +285,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -308,7 +317,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -339,7 +349,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -370,7 +381,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -401,7 +413,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -432,7 +445,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -463,7 +477,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -494,7 +509,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -525,7 +541,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -556,7 +573,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -587,7 +605,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -618,7 +637,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -649,7 +669,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -680,7 +701,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -711,7 +733,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -742,7 +765,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -773,7 +797,8 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
@@ -804,13 +829,40 @@
                                 "^com\\.baidu\\.icoding$",
                                 "^org\\.gnu\\.Emacs$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^com\\.apple\\.Terminal$"
+                                "^com\\.apple\\.Terminal$",
+                                "^com\\.googlecode\\.iterm2"
                             ]
                         }
                     ],
                     "type": "basic"
                 },
-                {}
+                {
+                    "from": {
+                        "key_code": "1",
+                        "modifiers": {
+                            "mandatory": [
+                                "control"
+                            ],
+                            "optional": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "1",
+                            "modifiers": "command"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                }
             ]
         },
         {
@@ -845,6 +897,9 @@
                         "modifiers": {
                             "mandatory": [
                                 "left_command"
+                            ],
+                            "optional": [
+                                "caps_lock"
                             ]
                         }
                     },
@@ -862,6 +917,9 @@
                         "modifiers": {
                             "mandatory": [
                                 "left_command"
+                            ],
+                            "optional": [
+                                "caps_lock"
                             ]
                         }
                     },
