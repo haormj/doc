@@ -147,8 +147,8 @@
                         "key_code": "t",
                         "modifiers": {
                             "mandatory": [
-                                "right_control",
-                                "right_option"
+                                "control",
+                                "option"
                             ],
                             "optional": [
                                 "caps_lock"
@@ -157,7 +157,7 @@
                     },
                     "to": [
                         {
-                            "shell_command": "open -a Terminal ~"
+                            "shell_command": "open -n -a iTerm ~"
                         }
                     ],
                     "type": "basic"
@@ -185,6 +185,7 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
+                                "^com\\.googlecode\\.iterm2$",
                                 "^com\\.apple\\.Terminal$"
                             ]
                         }
@@ -214,6 +215,7 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
+                                "^com\\.googlecode\\.iterm2$",
                                 "^com\\.apple\\.Terminal$"
                             ]
                         }
@@ -243,6 +245,7 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
+                                "^com\\.googlecode\\.iterm2$",
                                 "^com\\.apple\\.Terminal$"
                             ]
                         }
@@ -272,6 +275,7 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
+                                "^com\\.googlecode\\.iterm2$",
                                 "^com\\.apple\\.Terminal$"
                             ]
                         }
