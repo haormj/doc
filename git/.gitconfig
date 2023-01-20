@@ -8,6 +8,6 @@
 	lg = log --oneline --graph --decorate
 [user]
 	name = haormj
-	email = haormj@qq.com
+	email = haormj@haormj.com
 [core]
 	editor = vi
