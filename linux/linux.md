@@ -108,3 +108,11 @@ https://my.oschina.net/u/2306127/blog/1796090
 
 ```
 
+linux shell中
+```
+ll > /dev/null 2>&1 # 是将 stdout和stderr都重定向到 /dev/null 中
+ll &> /dev/null # 是将所有输出都重定向到 /dev/null 中
+```
+linux中程序被加载运行时环境变量已经确认了，在进程运行期间外界修改环境变量不会影响该程序
+
+
