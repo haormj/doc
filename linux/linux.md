@@ -104,9 +104,6 @@ fcitx -r
 
 ubuntu上制作window启动盘
 https://my.oschina.net/u/2306127/blog/1796090
-```
-
-```
 
 linux shell中
 ```
@@ -115,4 +112,13 @@ ll &> /dev/null # 是将所有输出都重定向到 /dev/null 中
 ```
 linux中程序被加载运行时环境变量已经确认了，在进程运行期间外界修改环境变量不会影响该程序
 
+linux 动态追踪技术可以分析某个进程或者系统的运行情况，而不需要借助断点或者添加日志
+
+| 使用场景 | 推荐工具 |
+| ---- | ---- |
+| 内核函数跟踪（如 kprobes）| ftrace, trace-cmd |
+| CPU 性能分析和堆栈分析 | perf，火焰图 |
+| REHL 动态跟踪内核或者应用程序函数或事件 | SystemTap |
+| 4.x 内核跟踪内核或应用程序函数或事件 | ebpf，bcc-tools |
+| Docker 容器应用性能分析 | sysdig |
 
