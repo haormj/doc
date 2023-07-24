@@ -124,9 +124,9 @@ linux 动态追踪技术可以分析某个进程或者系统的运行情况，�
 
 
 如果ubuntu出现问题，可以u盘启动一个ubuntu启动对磁盘上的系统进行修复
+```
 mount --bind /proc /path/to/ubuntu/proc
 mount --bind /sys /path/to/ubuntu/sys
 mount --bind /dev /path/to/ubuntu/dev
 chroot /path/to/ubuntu
-
-然后可以进行修复
+```
