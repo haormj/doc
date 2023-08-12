@@ -130,3 +130,6 @@ mount --bind /sys /path/to/ubuntu/sys
 mount --bind /dev /path/to/ubuntu/dev
 chroot /path/to/ubuntu
 ```
+
+ubuntu server 开机自动连接wifi 可以通过  nmtui 来设置，非常简单
+
