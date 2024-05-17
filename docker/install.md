@@ -47,3 +47,20 @@ Cheers,
 ```
 
 https://groups.google.com/g/docker-dev/c/zfxGDRPEN7A
+
+### 二进制安装
+
+centos6 
+
+如果是提示cgroup-fs的问题
+```
+service cgconfig start
+```
+
+如果没有自动创建 docker 网桥可以如下
+```
+ip link add name docker0 type bridge
+ip addr add dev docker0 172.17.0.1/16
+```
+
+
