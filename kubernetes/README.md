@@ -17,3 +17,6 @@
   - init 层主要是不会被 docker commit 提供，里面会包含 /etc/hostname /etc/resolv.conf 文件
   - 最后将不同层之间联合挂载到一个目录，这个目录就是进程运行的rootfs
   - 而将宿主机目录挂载到容器中，主要是基于绑定挂载来实现
+- k8s 架构
+  - master：api-server，controller-manager， schedule
+  - node：kubelet
