@@ -20,3 +20,6 @@
 - k8s 架构
   - master：api-server，controller-manager， schedule
   - node：kubelet
+- k8s 基本概念
+  - pod: 是k8s最基本的调度单位，一个pod中可以由多个容器，多个容器会共享命名空间，比如 network namespace，pod中有一个 infra 容器
+    - 从根本上来讲，其实 pod 就是一组共享命名空间的进程
