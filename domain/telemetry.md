@@ -63,6 +63,11 @@
       - match 系列，查询内容会被分词，且条件中还可以指定是否都需要满足等
   - 集群，集群相关内容，主节点如何选取，出问题了如何处理等内容，有需要可以深入理解
 - prometheus tsdb
+  - 首先 prometheus 的数据结构是 series sample，其中 series 由 指标名与一些可选的 key value 组成，将指标名也放入之后 __name__=metric_name 可以映射为一个数字id，这样能够 identifier
+  - 如果这样的话，后续应该如何检索的，索引是倒排索引，会建立 key=value 到 identifier 倒排索引，方便进行查询
+  - 为什么 ts 数据优化空间大？因为时序数据相邻值有很大的压缩空间，只需要有最小值，与 diff 就可以，这样对于数字就可以使用不定长方式来节省空间 比如 protobuf sint，当然具体实现我这边不清楚，但是这样就可以优化
+  - 在这个场景下，基本上搜索必然是有时间的这样的条件，而且能够快速通过时间找到相应的 block 数据
+  - https://tech.qimao.com/prometheus-tsdb-de-she-ji-yu-shi-xian-2/
 - loki
 - VictoriaMetrics 存储选的是什么
 - influxdb
