@@ -72,5 +72,7 @@
   - 搜索必然不如 elastisearch，因为有没有哪些索引
   - 但是相比而言，优势在哪里？类似 tsdb，因为是时序数据，这里可以有很多的优化空间，支持较为简单的 key=value 搜索
 - VictoriaMetrics 存储选的是什么
+  - 是 prometheus 的加强版本，提供生产环境可用的能力，分布式能力
 - influxdb
+  - 开源 tsdb
 - hbase
