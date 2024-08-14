@@ -7,6 +7,7 @@
 - 主要知识点
   - 时序存储
   - 流式计算
+    - flink
   - 数据采集
   - 监控告警
   - 智能诊断
@@ -41,5 +42,8 @@
 ### 存储
 
 - elasticsearch
+- prometheus tsdb
 - loki
+- VictoriaMetrics 存储选的是什么
+- influxdb
 - hbase
