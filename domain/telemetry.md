@@ -42,6 +42,17 @@
 ### 存储
 
 - elasticsearch
+  - 基本概念 cluster node shard index doc mapping setting
+  - node 有主节点，协调节点，数据节点，其中主节点主要维护整个集群的元数据信息，协调节点负责提供 http 接口给外部使用，数据节点负责数据存储
+  - 一个 index 在创建可以指定 主分片 与 副分片的数量，其中写入操作都是在主分片进行，数据写入完成后，可以在 副节点 进行读取，如果有多个主分片，那么会通过 doc id 哈希取余的方式选择主分片，所以index创建后无法新增主分片，否则涉及到的所有数据都需要调整与迁移
+  - 倒排索引 是内容到文档 id 之间的映射关系
+    - 单词词典 term dictionary，记录所有文档的单词，记录所有单词到倒排列表的关系
+      - 单词词典比较大，一般可以通过 b+ 树 或者是 哈希拉链法 实现
+    - 倒排列表 posting list，记录了单词到对应文档的集合，由倒排索引项组成
+      - 文档 id
+      - 词频 该单词再文档中出现的次数
+      - 位置 position
+      - 偏移 offset
 - prometheus tsdb
 - loki
 - VictoriaMetrics 存储选的是什么
