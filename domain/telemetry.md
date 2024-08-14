@@ -69,6 +69,8 @@
   - 在这个场景下，基本上搜索必然是有时间的这样的条件，而且能够快速通过时间找到相应的 block 数据
   - https://tech.qimao.com/prometheus-tsdb-de-she-ji-yu-shi-xian-2/
 - loki
+  - 搜索必然不如 elastisearch，因为有没有哪些索引
+  - 但是相比而言，优势在哪里？类似 tsdb，因为是时序数据，这里可以有很多的优化空间，支持较为简单的 key=value 搜索
 - VictoriaMetrics 存储选的是什么
 - influxdb
 - hbase
