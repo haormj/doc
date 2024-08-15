@@ -13,6 +13,7 @@
   - 智能诊断
   - 微服务 微服务框架
   - 容器 docker kubernetes istio/envoy
+    - kubernetes statefulset 更新是否有更加优化的方式
   - prometheus grafana zipkin opentelemetry zabbix
   - k8s/docker 云可观测系统 service mesh
   - ebpf
