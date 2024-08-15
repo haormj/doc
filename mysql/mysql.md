@@ -127,7 +127,8 @@ func (t *TestHandler) OnRow(e *canal.RowsEvent) error {
 }
 ```
 
-
+后续个人有空可以实现一个 memdb 其实就是 mysql innodb 内存版本，一方面对数据库有深刻认知，其次在一些实际情况中还是比较有用的，尤其是数据字段比较多，还有一些复杂的查询
+需要支持事务
 
 
 
