@@ -17,6 +17,16 @@
   - k8s/docker 云可观测系统 service mesh
   - ebpf
 
+### 流式计算
+
+- flink
+  - 流批一体计算框架，分为 job manager/task manager
+  - 有各种 connector 负责像 flink 输入与输出数据
+  - 支持 checkpoint，能够恢复任务，确保 exactly once 语义
+  - flink 有一些 state，ValueState，MapState， ListState 负责存储运算状态
+  - flink 支持算子，比如流连接，分组等操作
+  - flink 支持窗口计算，这个窗口都是和时间相关的，这里的时间有处理时间，事件时间
+
 ### 时序存储
 
 - 无论是log，metric，trace 都是时序数据，而且数据量都非常大
