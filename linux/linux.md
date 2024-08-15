@@ -133,3 +133,12 @@ chroot /path/to/ubuntu
 
 ubuntu server 开机自动连接wifi 可以通过  nmtui 来设置，非常简单
 
+查看 elf 信息
+
+```
+# 查看 elf section header 信息
+readelf -S your_binary_file
+# 可以查看 elf 中的符号信息
+readelf -s your_binary_file
+```
+
