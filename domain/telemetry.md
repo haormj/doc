@@ -89,3 +89,5 @@
 - hbase
   - 简单的数据模型，有一个 row key，可以对应多列簇，一个列簇里面有多个列，一个列簇存放到一起，
   - row key 是分区键，用来表明，数据存放在哪个 region，同一个列簇存放到一起，而且数据存储肯定是按照 row key 字典序存储的，并且有对应的索引
+- etcd
+  - https://draveness.me/etcd-introduction/
