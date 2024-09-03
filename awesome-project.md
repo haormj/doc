@@ -4,6 +4,8 @@
 
 - 人脸 https://github.com/deepinsight/insightface
 - transformer解释器 https://github.com/poloclub/transformer-explainer
+- https://www.promptingguide.ai/zh
+- https://prompts.chat/
 
 ### golang
 
