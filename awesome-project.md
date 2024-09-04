@@ -6,6 +6,7 @@
 - transformer解释器 https://github.com/poloclub/transformer-explainer
 - https://www.promptingguide.ai/zh
 - https://prompts.chat/
+- https://github.com/BAAI-Agents/Cradle
 
 ### golang
 
