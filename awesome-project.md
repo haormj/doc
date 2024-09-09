@@ -1,5 +1,9 @@
 ## 有趣的项目
 
+### 完整项目
+
+- 一个相册 https://github.com/ente-io/ente
+
 ### 人工智能
 
 - 人脸 https://github.com/deepinsight/insightface
