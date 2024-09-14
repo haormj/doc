@@ -27,3 +27,7 @@
 ### 博客
 
 - https://lilianweng.github.io/
+
+### 课程
+
+- https://github.com/dair-ai/ML-YouTube-Courses
