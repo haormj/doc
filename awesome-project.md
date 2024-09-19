@@ -31,3 +31,7 @@
 ### 课程
 
 - https://github.com/dair-ai/ML-YouTube-Courses
+
+### 逆向工程
+
+- https://github.com/WerWolv/ImHex
