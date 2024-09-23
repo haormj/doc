@@ -11,6 +11,7 @@
 - https://www.promptingguide.ai/zh
 - https://prompts.chat/
 - https://github.com/BAAI-Agents/Cradle
+- 泊车端到端：https://github.com/qintonguav/ParkingE2E
 
 ### golang
 
