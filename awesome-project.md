@@ -42,3 +42,8 @@
 ### 物联网
 
 - MQTT服务器 https://github.com/mochi-mqtt/server
+
+### 自动驾驶
+
+- https://github.com/ApolloAuto/apollo/
+- https://github.com/minhanghuang/CyberRT
