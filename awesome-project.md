@@ -46,8 +46,10 @@
 
 ### 自动驾驶
 
-- https://github.com/ApolloAuto/apollo/
-- https://github.com/minhanghuang/CyberRT
-- https://github.com/AimRT/AimRT
-- https://github.com/autowarefoundation/autoware.universe
-- 路径规划 https://github.com/karlkurzer/path_planner
+- 通信框架
+  - https://github.com/ApolloAuto/apollo/
+  - https://github.com/minhanghuang/CyberRT
+  - https://github.com/AimRT/AimRT
+- 算法
+  - https://github.com/autowarefoundation/autoware.universe
+  - 路径规划 https://github.com/karlkurzer/path_planner
