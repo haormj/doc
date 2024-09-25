@@ -50,3 +50,4 @@
 - https://github.com/minhanghuang/CyberRT
 - https://github.com/AimRT/AimRT
 - https://github.com/autowarefoundation/autoware.universe
+- 路径规划 https://github.com/karlkurzer/path_planner
