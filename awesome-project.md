@@ -35,6 +35,7 @@
 ### 课程
 
 - https://github.com/dair-ai/ML-YouTube-Courses
+- https://github.com/rasbt/LLMs-from-scratch
 
 ### 逆向工程
 
