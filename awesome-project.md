@@ -15,6 +15,7 @@
 - Vision Language Models in Autonomous Driving: A Survey and Outlook https://arxiv.org/abs/2310.14414
 - https://github.com/ge25nab/Awesome-VLM-AD-ITS
 - https://github.com/hybridgroup/gocv
+- 多模态 https://github.com/LLaVA-VL/LLaVA-NeXT
 
 ### golang
 
