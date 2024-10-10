@@ -16,6 +16,7 @@
 - https://github.com/ge25nab/Awesome-VLM-AD-ITS
 - https://github.com/hybridgroup/gocv
 - 多模态 https://github.com/LLaVA-VL/LLaVA-NeXT
+- 快速构建web应用 https://github.com/gradio-app/gradio
 
 ### golang
 
