@@ -17,6 +17,7 @@
 - https://github.com/hybridgroup/gocv
 - 多模态 https://github.com/LLaVA-VL/LLaVA-NeXT
 - 快速构建web应用 https://github.com/gradio-app/gradio
+- 向量嵌入 https://github.com/FlagOpen/FlagEmbedding
 
 ### golang
 
