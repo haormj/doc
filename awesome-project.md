@@ -61,3 +61,8 @@
 ### 小程序
 
 - 小程序开发 https://github.com/dcloudio/uni-app
+
+### 启动盘
+
+- https://github.com/ventoy/Ventoy
+- https://github.com/pbatard/rufus
