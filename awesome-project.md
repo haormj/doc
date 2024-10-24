@@ -28,6 +28,10 @@
 - github.com/google/btree
 - 红黑树 github.com/petar/gollrb
 
+### python
+
+- 快速编写cli的库 https://github.com/fastapi/typer
+
 ### ebpf
 
 - https://github.com/eunomia-bpf/bpf-developer-tutorial
