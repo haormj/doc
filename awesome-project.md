@@ -39,6 +39,7 @@
 ### 博客
 
 - https://lilianweng.github.io/
+- https://github.com/donnemartin/system-design-primer
 
 ### 课程
 
