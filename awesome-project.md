@@ -75,5 +75,5 @@
 
 ### 向量数据库
 
-- https://github.com/milvus-io/milvus
-- https://github.com/spotify/annoy
+- 开源向量数据库 https://github.com/milvus-io/milvus
+- Approximate Nearest Neighbors 算法实现 https://github.com/spotify/annoy
