@@ -72,3 +72,8 @@
 
 - https://github.com/ventoy/Ventoy
 - https://github.com/pbatard/rufus
+
+### 向量数据库
+
+- https://github.com/milvus-io/milvus
+- https://github.com/spotify/annoy
