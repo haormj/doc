@@ -19,6 +19,7 @@
 - 快速构建web应用 https://github.com/gradio-app/gradio
 - 向量嵌入 https://github.com/FlagOpen/FlagEmbedding
 - https://github.com/OpenRLHF/OpenRLHF
+- https://github.com/ml-tooling/best-of-ml-python
 
 ### golang
 
