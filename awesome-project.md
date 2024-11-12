@@ -20,6 +20,7 @@
 - 向量嵌入 https://github.com/FlagOpen/FlagEmbedding
 - https://github.com/OpenRLHF/OpenRLHF
 - https://github.com/ml-tooling/best-of-ml-python
+- 开源数据，训练，推理的代码模型 https://github.com/OpenCoder-llm/OpenCoder-llm
 
 ### golang
 
