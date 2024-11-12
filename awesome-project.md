@@ -29,6 +29,7 @@
 - 获取系统和进程一些资源使用情况 github.com/shirou/gopsutil 
 - github.com/google/btree
 - 红黑树 github.com/petar/gollrb
+- 音视频相关包 https://github.com/AlexxIT/go2rtc
 
 ### python
 
