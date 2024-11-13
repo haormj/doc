@@ -35,6 +35,10 @@
 
 - 快速编写cli的库 https://github.com/fastapi/typer
 
+### c/c++
+
+- 内存泄露检测工具ASan https://github.com/google/sanitizers
+
 ### ebpf
 
 - https://github.com/eunomia-bpf/bpf-developer-tutorial
