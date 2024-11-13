@@ -53,6 +53,7 @@
 - https://github.com/dair-ai/ML-YouTube-Courses
 - https://github.com/rasbt/LLMs-from-scratch
 - https://github.com/changkun/modern-cpp-tutorial
+- https://github.com/microsoft/AI-System
 
 ### 逆向工程
 
