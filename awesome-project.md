@@ -86,3 +86,7 @@
 
 - 开源向量数据库 https://github.com/milvus-io/milvus
 - Approximate Nearest Neighbors 算法实现 https://github.com/spotify/annoy
+
+### 资源
+- pdf 资源网站 https://www.scribd.com/
+- 可以直接下载 scribd 资源 https://scribd.vdownloaders.com/
