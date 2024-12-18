@@ -6,4 +6,6 @@
 
 ### 参考
 
-- verilog编译器 https://github.com/steveicarus/iverilog
+- verilog编译和仿真 https://github.com/steveicarus/iverilog
+- 查看仿真波形图 https://github.com/gtkwave/gtkwave
+- 
