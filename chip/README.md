@@ -7,6 +7,8 @@
 ### 专用名词
 
 - 集成电路：Integrated Circuit（IC）
+- 知识产权模块：Intellectual Property（IP） 在芯片设计中指的是预先设计好的功能模块或设计单元，通常是经过验证的硬件电路组件，可以重复使用在不同的芯片项目中。
+- 电子设计自动化：Electronic Design Automation（EDA） 指用于芯片设计和制造过程的自动化软件工具集合。它帮助工程师设计、验证和制造集成电路（IC）和半导体。
 
 ### 基础知识
 
