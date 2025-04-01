@@ -59,6 +59,11 @@ server {
     server_name  localhost;
     root /path/to/root;
     index index.html;
+
+    location /aaa {
+        alias   /path/to/aaa;
+        index  index.html;
+    }
 }
 ```
 
